@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="SocialShare.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.share').ShareLink({
+                    title: 'test title',
+                    text: 'test text',
+                    url: 'http://example.com/test.html'
+                })
+                $('.counter').ShareCounter({
+                    url: 'http://google.com/'
+                })
+                 
+            });
+        </script>
+    </head>
+    <body>
+        <div id='content'>
+            <a class='share s_vk'>vkontakte</a> - <span class='counter c_vk'></span><br/>
+            <a class='share s_twitter'>twitter</a> - <span class='counter c_twitter'></span><br/>
+            <a class='share s_facebook'>facebook</a> - <span class='counter c_facebook'></span><br/>
+            <a class='share s_linkedin'>linkedin</a> - <span class='counter c_linkedin'></span><br/>
+            <a class='share s_myworld'>myworld</a> - <span class='counter c_myworld'></span><br/>
+            <a class='share s_odnoklassniki'>odnoklassniki</a> - <span class='counter c_odnoklassniki'></span><br/>
+            <a class='share s_pinterest'>pinterest</a> - <span class='counter c_pinterest'></span><br/>
+        </div>
+    </body>
+</html>
