@@ -1,0 +1,5 @@
+#!/bin/sh
+
+uglifyjs SocialShare.js -m -o SocialShare.min.js
+
+git add SocialShare.min.js
