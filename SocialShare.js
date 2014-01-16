@@ -6,6 +6,7 @@
         var defaults = {
             title: '',
             text: '',
+            image: '',
             url: window.location.href,
             class_prefix: 's_',
             height: 430,
@@ -18,11 +19,11 @@
 
         var templates = {
             twitter: 'https://twitter.com/home?status={title}+{url}',
-            pinterest: 'https://pinterest.com/pin/create/bookmarklet/?media={media}&url={url}&is_video=false&description={title}',
-            facebook: 'https://facebook.com/sharer/sharer.php?u={url}&title={title}',
+            pinterest: 'https://pinterest.com/pin/create/bookmarklet/?media={image}&url={url}&is_video=false&description={title}',
+            facebook: 'https://www.facebook.com/sharer.php?s=100&p[title]={title}&p[summary]={text}&p[url]={url}&p[images][0]={url}',
             vk: 'https://vkontakte.ru/share.php?url={url}&title={title}&description={text}',
             linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}',
-            myworld: 'http://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={media}',
+            myworld: 'http://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={image}',
             odnoklassniki: 'http://odnoklassniki.ru/dk?st.cmd=addShare&st._surl={url}&st.comments={text}',
         }
 
@@ -31,7 +32,7 @@
             url = url.replace('{url}', encodeURIComponent(options.url));
             url = url.replace('{title}', encodeURIComponent(options.title));
             url = url.replace('{text}', encodeURIComponent(options.text));
-            url = url.replace('{media}', encodeURIComponent(options.media));
+            url = url.replace('{image}', encodeURIComponent(options.image));
             return url;
         }
 
