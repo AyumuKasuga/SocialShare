@@ -5,8 +5,8 @@ jQuery plugin
 
 SocialShare is ideal choice for start to create custom social share buttons and share counters.
 
-Simple example for generate share links
----------------------------------------
+### Simple example for generate share links:
+
 
 ```javascript
 $('.share').ShareLink({
@@ -17,8 +17,8 @@ $('.share').ShareLink({
 })
 ```
 
-Simple example for create share counters
-----------------------------------------
+### Simple example for create share counters:
+
 
 ```javascript
 $('.counter').ShareCounter({
@@ -29,8 +29,8 @@ $('.counter').ShareCounter({
 [Example in action](http://htmlpreview.github.io/?https://raw.github.com/AyumuKasuga/SocialShare/master/example.html)
 
 
-Supported social networks
--------------------------
+### Supported social networks
+
 
 For now supported networks for like counters:
 * [Twitter](https://twitter.com/)
