@@ -9,8 +9,6 @@
             image: '',
             url: window.location.href,
             class_prefix: 's_',
-            height: 430,
-            width: 640
         };
 
         var options = $.extend({}, defaults, options);
@@ -18,13 +16,13 @@
         var class_prefix_length = options.class_prefix.length;
 
         var templates = {
-            twitter: 'https://twitter.com/home?status={title}+{url}',
-            pinterest: 'https://pinterest.com/pin/create/bookmarklet/?media={image}&url={url}&is_video=false&description={title}',
-            facebook: 'https://www.facebook.com/sharer.php?s=100&p[title]={title}&p[summary]={text}&p[url]={url}&p[images][0]={url}',
-            vk: 'https://vkontakte.ru/share.php?url={url}&title={title}&description={text}',
-            linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}',
+            twitter: 'https://twitter.com/intent/tweet?url={url}&text={text}',
+            pinterest: 'https://www.pinterest.com/pin/create/button/?media={image}&url={url}&description={text}',
+            facebook: 'https://www.facebook.com/sharer.php?s=100&p[title]={title}&p[summary]={text}&p[url]={url}&p[images][0]={image}',
+            vk: 'https://vkontakte.ru/share.php?url={url}&title={title}&description={text}&image={image}&noparse=true',
+            linkedin: 'http://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={text}&source={url}',
             myworld: 'http://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={image}',
-            odnoklassniki: 'http://odnoklassniki.ru/dk?st.cmd=addShare&st._surl={url}&st.comments={text}',
+            odnoklassniki: 'http://odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl={url}&st.comments={text}',
         }
 
         function link(network){
@@ -43,7 +41,7 @@
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && templates[cls.substr(class_prefix_length)]){
                     var final_link = link(cls.substr(class_prefix_length));
                     $(elem).attr('href', final_link).click(function(){
-                        return window.open($(this).attr('href'), '', 'height=' + options.height + ',width=' + options.width) && false;
+                        return window.open($(this).attr('href'), '', 'toolbar=0,status=0,width=626,height=436') && false;
                     });
                 }
             }
