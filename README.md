@@ -26,7 +26,7 @@ $('.counter').ShareCounter({
 })
 ```
 
-[Example in action](http://htmlpreview.github.io/?https://raw.github.com/AyumuKasuga/SocialShare/master/example.html)
+#### [Example in action](http://htmlpreview.github.io/?https://raw.github.com/AyumuKasuga/SocialShare/master/example.html)
 
 
 ### Supported social networks
