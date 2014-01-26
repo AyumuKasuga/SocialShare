@@ -23,6 +23,9 @@
             linkedin: 'http://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={text}&source={url}',
             myworld: 'http://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={image}',
             odnoklassniki: 'http://odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl={url}&st.comments={text}',
+            tumblr: 'https://tumblr.com/share?s=&v=3&t={title}&u={url}',
+            blogger: 'http://blogger.com/blog-this.g?t={text}&n={title}&u={url}',
+            delicious: 'http://delicious.com/save?url={url}&title={title}'
         }
 
         function link(network){

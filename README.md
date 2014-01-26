@@ -122,5 +122,20 @@ $('.counter').ShareCounter({
         <td>http://www.pinterest.com/</td>
         <td>s_pinterest</td>
     </tr>
+    <tr>
+        <td>Tumblr</td>
+        <td>https://www.tumblr.com/</td>
+        <td>s_tumblr</td>
+    </tr>
+    <tr>
+        <td>Blogger</td>
+        <td>https://www.blogger.com</td>
+        <td>s_blogger</td>
+    </tr>
+    <tr>
+        <td>Delicious</td>
+        <td>https://delicious.com/</td>
+        <td>s_delicious</td>
+    </tr>
 </table>
 
