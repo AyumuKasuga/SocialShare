@@ -37,34 +37,42 @@ For now supported networks for like counters:
 <table>
     <tr>
         <th>network</th>
+        <th>link</th>
         <th>class with default prefix (c_)</th>
     </tr>
     <tr>
-        <td>[Twitter](https://twitter.com/)</td>
+        <td>Twitter</td>
+        <td>https://twitter.com/</td>
         <td>c_twitter</td>
     </tr>
     <tr>
-        <td>[Facebook](https://www.facebook.com/)</td>
+        <td>Facebook</td>
+        <td>https://www.facebook.com/</td>
         <td>c_facebook</td>
     </tr>
     <tr>
-        <td>[Vkontakte](https://vk.com/)</td>
+        <td>Vkontakte</td>
+        <td>https://vk.com/</td>
         <td>c_vk</td>
     </tr>
     <tr>
-        <td>[Мой Мир](http://my.mail.ru/)</td>
+        <td>Мой Мир</td>
+        <td>http://my.mail.ru/</td>
         <td>c_myworld</td>
     </tr>
     <tr>
-        <td>[Linkedin](http://www.linkedin.com/)</td>
+        <td>Linkedin</td>
+        <td>http://www.linkedin.com/</td>
         <td>c_linkedin</td>
     </tr>
     <tr>
-        <td>[Одноклассники](http://odnoklassniki.ru/)</td>
+        <td>Одноклассники</td>
+        <td>http://odnoklassniki.ru/</td>
         <td>c_odnoklassniki</td>
     </tr>
     <tr>
-        <td>[Pinterest](http://www.pinterest.com/)</td>
+        <td>Pinterest</td>
+        <td>http://www.pinterest.com/</td>
         <td>c_pinterest</td>
     </tr>
 </table>
