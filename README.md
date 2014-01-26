@@ -10,10 +10,11 @@ SocialShare is ideal choice for start to create custom social share buttons and 
 
 ```javascript
 $('.share').ShareLink({
-    title: 'My great post',
-    text: 'text of my great post',
-    image: 'http://my-site-url.com/images/funny-cats.png',
-    url: 'http://my-site-url.com/my-article.html'
+    title: 'My great post', // title for share message
+    text: 'text of my great post', // text for share message
+    image: 'http://my-site-url.com/images/funny-cats.png', // optional image for share message (not for all networks)
+    url: 'http://my-site-url.com/my-article.html', // link on shared page
+    class_prefix: 's_' // optional class prefix for share elements (buttons or links or everything), default: 's_'
 })
 ```
 
@@ -22,7 +23,8 @@ $('.share').ShareLink({
 
 ```javascript
 $('.counter').ShareCounter({
-    url: 'http://my-site-url.com/my-article.html'
+    url: 'http://my-site-url.com/my-article.html', // url for which you want show like counter
+    class_prefix: 'c_' // optional class prefix for counter elements, default: 'c_'
 })
 ```
 
@@ -32,7 +34,7 @@ $('.counter').ShareCounter({
 ### Supported social networks
 
 
-For now supported networks for like counters:
+#### for now supported networks for like counters:
 
 <table>
     <tr>
@@ -77,12 +79,48 @@ For now supported networks for like counters:
     </tr>
 </table>
 
-for generate share link address:
-* [Twitter](https://twitter.com/)
-* [Facebook](https://www.facebook.com/)
-* [Vkontakte](https://vk.com/)
-* [Мой Мир](http://my.mail.ru/)
-* [Linkedin](http://www.linkedin.com/)
-* [Одноклассники](http://odnoklassniki.ru/)
-* [Pinterest](http://www.pinterest.com/)
+#### for generate share link address:
+
+<table>
+    <tr>
+        <th>network</th>
+        <th>link</th>
+        <th>class with default prefix (s_)</th>
+    </tr>
+    <tr>
+        <td>Twitter</td>
+        <td>https://twitter.com/</td>
+        <td>s_twitter</td>
+    </tr>
+    <tr>
+        <td>Facebook</td>
+        <td>https://www.facebook.com/</td>
+        <td>s_facebook</td>
+    </tr>
+    <tr>
+        <td>Vkontakte</td>
+        <td>https://vk.com/</td>
+        <td>s_vk</td>
+    </tr>
+    <tr>
+        <td>Мой Мир</td>
+        <td>http://my.mail.ru/</td>
+        <td>s_myworld</td>
+    </tr>
+    <tr>
+        <td>Linkedin</td>
+        <td>http://www.linkedin.com/</td>
+        <td>s_linkedin</td>
+    </tr>
+    <tr>
+        <td>Одноклассники</td>
+        <td>http://odnoklassniki.ru/</td>
+        <td>s_odnoklassniki</td>
+    </tr>
+    <tr>
+        <td>Pinterest</td>
+        <td>http://www.pinterest.com/</td>
+        <td>s_pinterest</td>
+    </tr>
+</table>
 
