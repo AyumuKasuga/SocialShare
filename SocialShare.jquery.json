@@ -6,9 +6,9 @@
         "social",
         "share"
     ],
-    "version": "0.1.1",
+    "version": "0.1.2",
     "dependencies": {
-        "jquery": ">=2.0.0"
+        "jquery": ">=2.x"
     },
     "author": {
         "name" : "Andrey Kostakov",
@@ -20,6 +20,8 @@
             "type": "MIT",
             "url": "https://github.com/AyumuKasuga/SocialShare/blob/master/LICENSE"
         }
-    ]
+    ],
+    "homepage": "https://github.com/AyumuKasuga/SocialShare/",
+    "bugs": "https://github.com/AyumuKasuga/SocialShare/issues"
 }
 
