@@ -137,5 +137,10 @@ $('.counter').ShareCounter({
         <td>https://delicious.com/</td>
         <td>s_delicious</td>
     </tr>
+    <tr>
+        <td>Google +</td>
+        <td>https://plus.google.com/</td>
+        <td>s_plus</td>
+    </tr>
 </table>
 
