@@ -1,0 +1,24 @@
+{
+    "name": "SocialShare",
+    "title": "SocialShare - jQuery plugin",
+    "description": "jQuery plugin for create custom share buttons and counters",
+    "keywords": [
+        "social",
+        "share"
+    ],
+    "version": "0.1.1",
+    "dependencies": {
+        "jquery": ">=2.0.0"
+    },
+    "author": {
+        "name" : "Andrey Kostakov",
+        "email" : "bps@dzen.ws",
+        "url" : "https://github.com/AyumuKasuga/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ]
+}
