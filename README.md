@@ -142,5 +142,25 @@ $('.counter').ShareCounter({
         <td>https://plus.google.com/</td>
         <td>s_plus</td>
     </tr>
+    <tr>
+        <td>Digg</td>
+        <td>http://digg.com/</td>
+        <td>s_digg</td>
+    </tr>
+    <tr>
+        <td>Reddit</td>
+        <td>http://www.reddit.com/</td>
+        <td>s_reddit</td>
+    </tr>
+    <tr>
+        <td>Stumbleupon</td>
+        <td>http://www.stumbleupon.com/</td>
+        <td>s_stumbleupon</td>
+    </tr>
 </table>
 
+
+### Roadmap
+* More social services
+* Individual parameters popup window on each service
+* Custom parameters for popup window

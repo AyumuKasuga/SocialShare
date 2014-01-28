@@ -20,13 +20,16 @@
             pinterest: 'https://www.pinterest.com/pin/create/button/?media={image}&url={url}&description={text}',
             facebook: 'https://www.facebook.com/sharer.php?s=100&p[title]={title}&p[summary]={text}&p[url]={url}&p[images][0]={image}',
             vk: 'https://vkontakte.ru/share.php?url={url}&title={title}&description={text}&image={image}&noparse=true',
-            linkedin: 'http://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={text}&source={url}',
-            myworld: 'http://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={image}',
+            linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={text}&source={url}',
+            myworld: 'https://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={image}',
             odnoklassniki: 'http://odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl={url}&st.comments={text}',
             tumblr: 'https://tumblr.com/share?s=&v=3&t={title}&u={url}',
-            blogger: 'http://blogger.com/blog-this.g?t={text}&n={title}&u={url}',
-            delicious: 'http://delicious.com/save?url={url}&title={title}',
-            plus: 'https://plus.google.com/share?url={url}'
+            blogger: 'https://blogger.com/blog-this.g?t={text}&n={title}&u={url}',
+            delicious: 'https://delicious.com/save?url={url}&title={title}',
+            plus: 'https://plus.google.com/share?url={url}',
+            digg: 'https://digg.com/submit?url={url}&title={title}',
+            reddit: 'http://reddit.com/submit?url={url}&title={title}',
+            stumbleupon: 'https://www.stumbleupon.com/submit?url={url}&title={title}'
         }
 
         function link(network){
@@ -45,7 +48,14 @@
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && templates[cls.substr(class_prefix_length)]){
                     var final_link = link(cls.substr(class_prefix_length));
                     $(elem).attr('href', final_link).click(function(){
-                        return window.open($(this).attr('href'), '', 'toolbar=0,status=0,width=626,height=436') && false;
+                        var screen_width = screen.width;
+                        var screen_height = screen.height;
+                        var popup_width = screen_width - (screen_width*0.2);
+                        var popup_height = screen_height - (screen_height*0.2);
+                        var left = (screen_width/2)-(popup_width/2);
+                        var top = (screen_height/2)-(popup_height/2);
+                        var parameters = 'toolbar=0,status=0,width=' + popup_width + ',height=' + popup_height + ',top=' + top + ',left=' + left;
+                        return window.open($(this).attr('href'), '', parameters) && false;
                     });
                 }
             }
