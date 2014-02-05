@@ -106,7 +106,7 @@
                 type : 'GET',
                 dataType : 'jsonp',
                 url : 'https://cdn.api.twitter.com/1/urls/count.json',
-                data : {'url': url},
+                data : {'url': url}
             })
             .done(function(data){callback(data.count);})
             .fail(function(data){callback(0);})
@@ -175,7 +175,7 @@
                 dataType: 'jsonp',
                 url: 'http://odnoklassniki.ru/dk',
                 jsonp: 'cb',
-                data: {'st.cmd': 'shareData', 'ref': url},
+                data: {'st.cmd': 'shareData', 'ref': url}
             })
             .done(function(data){callback(parseInt(data.count))})
             .fail(function(){callback(0)})
@@ -186,7 +186,7 @@
                 type: 'GET',
                 dataType: 'jsonp',
                 url: 'https://api.pinterest.com/v1/urls/count.json',
-                data: {'url': url},
+                data: {'url': url}
             })
             .done(function(data){callback(data.count)})
             .fail(function(){callback(0)})
