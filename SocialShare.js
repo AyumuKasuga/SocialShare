@@ -8,7 +8,7 @@
             text: '',
             image: '',
             url: window.location.href,
-            class_prefix: 's_',
+            class_prefix: 's_'
         };
 
         var options = $.extend({}, defaults, options);
