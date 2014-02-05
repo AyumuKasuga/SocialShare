@@ -29,7 +29,14 @@
             plus: 'https://plus.google.com/share?url={url}',
             digg: 'https://digg.com/submit?url={url}&title={title}',
             reddit: 'http://reddit.com/submit?url={url}&title={title}',
-            stumbleupon: 'https://www.stumbleupon.com/submit?url={url}&title={title}'
+            stumbleupon: 'https://www.stumbleupon.com/submit?url={url}&title={title}',
+            pocket: 'https://getpocket.com/edit?url={url}&title={title}',
+            chiq: 'http://www.chiq.com/create/bookmarklet?u={url}&i={image}&d={title}&c={url}',
+            qrifier: 'http://qrifier.com/q?inc=qr&type=url&size=350&string={url}',
+            qrsrc: 'http://www.qrsrc.com/default.aspx?shareurl={url}',
+            qzone: 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={url}',
+            tulinq: 'http://www.tulinq.com/enviar?url={url}&title={title}',
+            misterwong: 'http://www.mister-wong.com/index.php?action=addurl&bm_url={url}&bm_description={title}&bm_notice='
         }
 
         function link(network){

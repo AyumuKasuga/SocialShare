@@ -157,6 +157,41 @@ $('.counter').ShareCounter({
         <td>http://www.stumbleupon.com/</td>
         <td>s_stumbleupon</td>
     </tr>
+    <tr>
+        <td>Pocket</td>
+        <td>http://getpocket.com/</td>
+        <td>s_pocket</td>
+    </tr>
+    <tr>
+        <td>Chiq</td>
+        <td>http://www.chiq.com/</td>
+        <td>s_chiq</td>
+    </tr>
+    <tr>
+        <td>Qrifier</td>
+        <td>http://www.qrifier.com/</td>
+        <td>s_qrifier</td>
+    </tr>
+    <tr>
+        <td>Qrsrc</td>
+        <td>http://www.qrsrc.com/</td>
+        <td>s_qrsrc</td>
+    </tr>
+    <tr>
+        <td>Qzone</td>
+        <td>http://qzone.qq.com/</td>
+        <td>s_s_qzone</td>
+    </tr>
+    <tr>
+        <td>Tulinq</td>
+        <td>http://www.tulinq.com/</td>
+        <td>s_tulinq</td>
+    </tr>
+    <tr>
+        <td>Mister Wong</td>
+        <td>http://www.mister-wong.com/</td>
+        <td>s_misterwong</td>
+    </tr>
 </table>
 
 
