@@ -428,16 +428,6 @@ $('.counter').ShareCounter({
         <td>s_folkd</td>
     </tr>
     <tr>
-        <td>Formspring</td>
-        <td>http://www.formspring.me/</td>
-        <td>s_formspring</td>
-    </tr>
-    <tr>
-        <td>Thefreedictionary</td>
-        <td>http://www.thefreedictionary.com/</td>
-        <td>s_thefreedictionary</td>
-    </tr>
-    <tr>
         <td>Fresqui</td>
         <td>http://fresqui.com/</td>
         <td>s_fresqui</td>
@@ -458,44 +448,9 @@ $('.counter').ShareCounter({
         <td>s_fwisp</td>
     </tr>
     <tr>
-        <td>Gabbr</td>
-        <td>http://www.gabbr.com/</td>
-        <td>s_gabbr</td>
-    </tr>
-    <tr>
-        <td>Gamekicker</td>
-        <td>http://www.gamekicker.com/</td>
-        <td>s_gamekicker</td>
-    </tr>
-    <tr>
-        <td>Gg</td>
-        <td>http://www.gg.pl/</td>
-        <td>s_gg</td>
-    </tr>
-    <tr>
-        <td>Giftery</td>
-        <td>http://www.giftery.me/</td>
-        <td>s_giftery</td>
-    </tr>
-    <tr>
-        <td>Gigbasket</td>
-        <td>http://www.gigbasket.com/</td>
-        <td>s_gigbasket</td>
-    </tr>
-    <tr>
-        <td>Givealink</td>
-        <td>http://givealink.org/</td>
-        <td>s_givealink</td>
-    </tr>
-    <tr>
         <td>Gmail</td>
         <td>http://mail.google.com/</td>
         <td>s_gmail</td>
-    </tr>
-    <tr>
-        <td>Govn</td>
-        <td>http://my.go.vn/</td>
-        <td>s_govn</td>
     </tr>
     <tr>
         <td>Goodnoows</td>
@@ -508,19 +463,9 @@ $('.counter').ShareCounter({
         <td>s_google</td>
     </tr>
     <tr>
-        <td>Google_plusone</td>
-        <td>:///</td>
-        <td>s_google_plusone</td>
-    </tr>
-    <tr>
         <td>Googletranslate</td>
         <td>http://translate.google.com/</td>
         <td>s_googletranslate</td>
-    </tr>
-    <tr>
-        <td>Google_plusone_share</td>
-        <td>https://plus.google.com/</td>
-        <td>s_google_plusone_share</td>
     </tr>
     <tr>
         <td>Greaterdebater</td>
@@ -538,24 +483,9 @@ $('.counter').ShareCounter({
         <td>s_hatena</td>
     </tr>
     <tr>
-        <td>Gluvsnap</td>
-        <td>http://www.healthimize.com/</td>
-        <td>s_gluvsnap</td>
-    </tr>
-    <tr>
         <td>Hedgehogs</td>
         <td>http://www.hedgehogs.net/</td>
         <td>s_hedgehogs</td>
-    </tr>
-    <tr>
-        <td>Historious</td>
-        <td>http://historio.us/</td>
-        <td>s_historious</td>
-    </tr>
-    <tr>
-        <td>Hotklix</td>
-        <td>http://www.hotklix.com/</td>
-        <td>s_hotklix</td>
     </tr>
     <tr>
         <td>Hotmail</td>
@@ -568,49 +498,14 @@ $('.counter').ShareCounter({
         <td>s_w3validator</td>
     </tr>
     <tr>
-        <td>Hyves</td>
-        <td>http://www.hyves.net/</td>
-        <td>s_hyves</td>
-    </tr>
-    <tr>
-        <td>Identica</td>
-        <td>http://identi.ca/</td>
-        <td>s_identica</td>
-    </tr>
-    <tr>
-        <td>Igoogle</td>
-        <td>http://www.google.com/</td>
-        <td>s_igoogle</td>
-    </tr>
-    <tr>
         <td>Ihavegot</td>
         <td>http://www.ihavegot.com/</td>
         <td>s_ihavegot</td>
     </tr>
     <tr>
-        <td>Index4</td>
-        <td>http://www.index4.in/</td>
-        <td>s_index4</td>
-    </tr>
-    <tr>
-        <td>Indexor</td>
-        <td>http://www.indexor.co.uk/</td>
-        <td>s_indexor</td>
-    </tr>
-    <tr>
         <td>Instapaper</td>
         <td>http://www.instapaper.com/</td>
         <td>s_instapaper</td>
-    </tr>
-    <tr>
-        <td>Iorbix</td>
-        <td>http://iorbix.com/</td>
-        <td>s_iorbix</td>
-    </tr>
-    <tr>
-        <td>Irepeater</td>
-        <td>http://irepeater.com/</td>
-        <td>s_irepeater</td>
     </tr>
     <tr>
         <td>Isociety</td>
@@ -628,16 +523,6 @@ $('.counter').ShareCounter({
         <td>s_jamespot</td>
     </tr>
     <tr>
-        <td>Jappy</td>
-        <td>http://www.jappy.de/</td>
-        <td>s_jappy</td>
-    </tr>
-    <tr>
-        <td>Jolly</td>
-        <td>http://jolly.vn/</td>
-        <td>s_jolly</td>
-    </tr>
-    <tr>
         <td>Jumptags</td>
         <td>http://www.jumptags.com/</td>
         <td>s_jumptags</td>
@@ -653,59 +538,14 @@ $('.counter').ShareCounter({
         <td>s_kaevur</td>
     </tr>
     <tr>
-        <td>Kaixin</td>
-        <td>http://www.kaixin001.com/</td>
-        <td>s_kaixin</td>
-    </tr>
-    <tr>
-        <td>Ketnooi</td>
-        <td>http://ketnooi.com/</td>
-        <td>s_ketnooi</td>
-    </tr>
-    <tr>
-        <td>Kindleit</td>
-        <td>http://fivefilters.org/</td>
-        <td>s_kindleit</td>
-    </tr>
-    <tr>
         <td>Kledy</td>
         <td>http://www.kledy.de/</td>
         <td>s_kledy</td>
     </tr>
     <tr>
-        <td>Kommenting</td>
-        <td>http://www.kommenting.com/</td>
-        <td>s_kommenting</td>
-    </tr>
-    <tr>
-        <td>Latafaneracat</td>
-        <td>http://latafanera.cat/</td>
-        <td>s_latafaneracat</td>
-    </tr>
-    <tr>
         <td>Librerio</td>
         <td>http://www.librerio.com/</td>
         <td>s_librerio</td>
-    </tr>
-    <tr>
-        <td>Lidar</td>
-        <td>https://www.lidar-online.com/</td>
-        <td>s_lidar</td>
-    </tr>
-    <tr>
-        <td>Linkedin</td>
-        <td>http://www.linkedin.com/</td>
-        <td>s_linkedin</td>
-    </tr>
-    <tr>
-        <td>Linksgutter</td>
-        <td>http://www.linksgutter.com/</td>
-        <td>s_linksgutter</td>
-    </tr>
-    <tr>
-        <td>Linkshares</td>
-        <td>http://www.linkshares.net/</td>
-        <td>s_linkshares</td>
     </tr>
     <tr>
         <td>Linkuj</td>
@@ -718,39 +558,14 @@ $('.counter').ShareCounter({
         <td>s_livejournal</td>
     </tr>
     <tr>
-        <td>Lockerblogger</td>
-        <td>http://www.lockerblogger.com/</td>
-        <td>s_lockerblogger</td>
-    </tr>
-    <tr>
         <td>Logger24</td>
         <td>http://logger24.com/</td>
         <td>s_logger24</td>
     </tr>
     <tr>
-        <td>Mymailru</td>
-        <td>http://connect.mail.ru/</td>
-        <td>s_mymailru</td>
-    </tr>
-    <tr>
-        <td>Markme</td>
-        <td>http://markme.me/</td>
-        <td>s_markme</td>
-    </tr>
-    <tr>
-        <td>Mashant</td>
-        <td>http://www.mashant.com/</td>
-        <td>s_mashant</td>
-    </tr>
-    <tr>
         <td>Mashbord</td>
         <td>http://mashbord.com/</td>
         <td>s_mashbord</td>
-    </tr>
-    <tr>
-        <td>Me2day</td>
-        <td>http://me2day.net/</td>
-        <td>s_me2day</td>
     </tr>
     <tr>
         <td>Meinvz</td>
@@ -763,39 +578,14 @@ $('.counter').ShareCounter({
         <td>s_mekusharim</td>
     </tr>
     <tr>
-        <td>Memonic</td>
-        <td>http://www.memonic.com/</td>
-        <td>s_memonic</td>
-    </tr>
-    <tr>
         <td>Memori</td>
         <td>http://memori.ru/</td>
         <td>s_memori</td>
     </tr>
     <tr>
-        <td>Mendeley</td>
-        <td>http://www.mendeley.com/</td>
-        <td>s_mendeley</td>
-    </tr>
-    <tr>
         <td>Meneame</td>
         <td>http://www.meneame.net/</td>
         <td>s_meneame</td>
-    </tr>
-    <tr>
-        <td>Live</td>
-        <td>http://profile.live.com/</td>
-        <td>s_live</td>
-    </tr>
-    <tr>
-        <td>Misterwong</td>
-        <td>http://www.mister-wong.com/</td>
-        <td>s_misterwong</td>
-    </tr>
-    <tr>
-        <td>Misterwong_de</td>
-        <td>http://www.mister-wong.de/</td>
-        <td>s_misterwong_de</td>
     </tr>
     <tr>
         <td>Mixi</td>
@@ -808,16 +598,6 @@ $('.counter').ShareCounter({
         <td>s_moemesto</td>
     </tr>
     <tr>
-        <td>Moikrug</td>
-        <td>http://moikrug.ru/</td>
-        <td>s_moikrug</td>
-    </tr>
-    <tr>
-        <td>Mrcnetworkit</td>
-        <td>http://www.mrcnetwork.it/</td>
-        <td>s_mrcnetworkit</td>
-    </tr>
-    <tr>
         <td>Myspace</td>
         <td>http://www.myspace.com/</td>
         <td>s_myspace</td>
@@ -828,29 +608,14 @@ $('.counter').ShareCounter({
         <td>s_n4g</td>
     </tr>
     <tr>
-        <td>Naszaklasa</td>
-        <td>http://nk.pl/</td>
-        <td>s_naszaklasa</td>
-    </tr>
-    <tr>
         <td>Netlog</td>
         <td>http://www.netlog.com/</td>
         <td>s_netlog</td>
     </tr>
     <tr>
-        <td>Netvibes</td>
-        <td>http://netvibes.com/</td>
-        <td>s_netvibes</td>
-    </tr>
-    <tr>
         <td>Netvouz</td>
         <td>http://netvouz.com/</td>
         <td>s_netvouz</td>
-    </tr>
-    <tr>
-        <td>Newsmeback</td>
-        <td>http://www.newsmeback.com/</td>
-        <td>s_newsmeback</td>
     </tr>
     <tr>
         <td>Newstrust</td>
@@ -868,39 +633,14 @@ $('.counter').ShareCounter({
         <td>s_nujij</td>
     </tr>
     <tr>
-        <td>Odnoklassniki_ru</td>
-        <td>http://www.odnoklassniki.ru/</td>
-        <td>s_odnoklassniki_ru</td>
-    </tr>
-    <tr>
         <td>Oknotizie</td>
         <td>http://oknotizie.virgilio.it/</td>
         <td>s_oknotizie</td>
     </tr>
     <tr>
-        <td>Orkut</td>
-        <td>http://promote.orkut.com/</td>
-        <td>s_orkut</td>
-    </tr>
-    <tr>
-        <td>Dashboard</td>
-        <td>http://api.addthis.com/</td>
-        <td>s_dashboard</td>
-    </tr>
-    <tr>
         <td>Oyyla</td>
         <td>http://www.oyyla.com/</td>
         <td>s_oyyla</td>
-    </tr>
-    <tr>
-        <td>Packg</td>
-        <td>http://www.packg.com/</td>
-        <td>s_packg</td>
-    </tr>
-    <tr>
-        <td>Pafnetde</td>
-        <td>http://www.pafnet.de/</td>
-        <td>s_pafnetde</td>
     </tr>
     <tr>
         <td>Pdfonline</td>
@@ -918,16 +658,6 @@ $('.counter').ShareCounter({
         <td>s_phonefavs</td>
     </tr>
     <tr>
-        <td>Pinterest</td>
-        <td>http://pinterest.com/</td>
-        <td>s_pinterest</td>
-    </tr>
-    <tr>
-        <td>Planypus</td>
-        <td>http://planyp.us/</td>
-        <td>s_planypus</td>
-    </tr>
-    <tr>
         <td>Plaxo</td>
         <td>http://www.plaxo.com/</td>
         <td>s_plaxo</td>
@@ -938,59 +668,14 @@ $('.counter').ShareCounter({
         <td>s_plurk</td>
     </tr>
     <tr>
-        <td>Pocket</td>
-        <td>https://getpocket.com/</td>
-        <td>s_pocket</td>
-    </tr>
-    <tr>
         <td>Posteezy</td>
         <td>http://posteezy.com/</td>
         <td>s_posteezy</td>
     </tr>
     <tr>
-        <td>Posterous</td>
-        <td>http://posterous.com/</td>
-        <td>s_posterous</td>
-    </tr>
-    <tr>
-        <td>Print</td>
-        <td>:///</td>
-        <td>s_print</td>
-    </tr>
-    <tr>
-        <td>Printfriendly</td>
-        <td>http://www.printfriendly.com/</td>
-        <td>s_printfriendly</td>
-    </tr>
-    <tr>
         <td>Pusha</td>
         <td>http://www.pusha.se/</td>
         <td>s_pusha</td>
-    </tr>
-    <tr>
-        <td>Qrfin</td>
-        <td>http://qrf.in/</td>
-        <td>s_qrfin</td>
-    </tr>
-    <tr>
-        <td>Qrsrc</td>
-        <td>http://www.qrsrc.com/</td>
-        <td>s_qrsrc</td>
-    </tr>
-    <tr>
-        <td>Quantcast</td>
-        <td>http://www.quantcast.com/</td>
-        <td>s_quantcast</td>
-    </tr>
-    <tr>
-        <td>Qzone</td>
-        <td>http://sns.qzone.qq.com/</td>
-        <td>s_qzone</td>
-    </tr>
-    <tr>
-        <td>Reddit</td>
-        <td>http://reddit.com/</td>
-        <td>s_reddit</td>
     </tr>
     <tr>
         <td>Rediff</td>
@@ -1003,39 +688,14 @@ $('.counter').ShareCounter({
         <td>s_redkum</td>
     </tr>
     <tr>
-        <td>Researchgate</td>
-        <td>http://www.researchgate.net/</td>
-        <td>s_researchgate</td>
-    </tr>
-    <tr>
-        <td>Safelinking</td>
-        <td>http://safelinking.net/</td>
-        <td>s_safelinking</td>
-    </tr>
-    <tr>
         <td>Scoopat</td>
         <td>http://scoop.at/</td>
         <td>s_scoopat</td>
     </tr>
     <tr>
-        <td>Scoopit</td>
-        <td>http://www.scoop.it/</td>
-        <td>s_scoopit</td>
-    </tr>
-    <tr>
         <td>Sekoman</td>
         <td>http://sekoman.lv/</td>
         <td>s_sekoman</td>
-    </tr>
-    <tr>
-        <td>Select2gether</td>
-        <td>http://www2.select2gether.com/</td>
-        <td>s_select2gether</td>
-    </tr>
-    <tr>
-        <td>Sharer</td>
-        <td>http://events.webmoney.ru/</td>
-        <td>s_sharer</td>
     </tr>
     <tr>
         <td>Shaveh</td>
@@ -1053,16 +713,6 @@ $('.counter').ShareCounter({
         <td>s_sinaweibo</td>
     </tr>
     <tr>
-        <td>Skyrock</td>
-        <td>http://www.skyrock.com/</td>
-        <td>s_skyrock</td>
-    </tr>
-    <tr>
-        <td>Smiru</td>
-        <td>http://smi2.ru/</td>
-        <td>s_smiru</td>
-    </tr>
-    <tr>
         <td>Sodahead</td>
         <td>http://www.sodahead.com/</td>
         <td>s_sodahead</td>
@@ -1071,21 +721,6 @@ $('.counter').ShareCounter({
         <td>Sonico</td>
         <td>http://www.sonico.com/</td>
         <td>s_sonico</td>
-    </tr>
-    <tr>
-        <td>Spinsnap</td>
-        <td>http://www.spinsnap.com/</td>
-        <td>s_spinsnap</td>
-    </tr>
-    <tr>
-        <td>Spokentoyou</td>
-        <td>http://www.spokentoyou.com/</td>
-        <td>s_spokentoyou</td>
-    </tr>
-    <tr>
-        <td>Yiid</td>
-        <td>http://spread.ly/</td>
-        <td>s_yiid</td>
     </tr>
     <tr>
         <td>Springpad</td>
@@ -1103,11 +738,6 @@ $('.counter').ShareCounter({
         <td>s_startlap</td>
     </tr>
     <tr>
-        <td>Storyfollower</td>
-        <td>http://www.storyfollower.com/</td>
-        <td>s_storyfollower</td>
-    </tr>
-    <tr>
         <td>Studivz</td>
         <td>http://www.studivz.net/</td>
         <td>s_studivz</td>
@@ -1118,29 +748,9 @@ $('.counter').ShareCounter({
         <td>s_stuffpit</td>
     </tr>
     <tr>
-        <td>Stumbleupon</td>
-        <td>http://www.stumbleupon.com/</td>
-        <td>s_stumbleupon</td>
-    </tr>
-    <tr>
         <td>Stumpedia</td>
         <td>http://www.stumpedia.com/</td>
         <td>s_stumpedia</td>
-    </tr>
-    <tr>
-        <td>Sunlize</td>
-        <td>http://www.sunlize.com/</td>
-        <td>s_sunlize</td>
-    </tr>
-    <tr>
-        <td>Supbro</td>
-        <td>http://supb.ro/</td>
-        <td>s_supbro</td>
-    </tr>
-    <tr>
-        <td>Surfingbird</td>
-        <td>http://surfingbird.ru/</td>
-        <td>s_surfingbird</td>
     </tr>
     <tr>
         <td>Svejo</td>
@@ -1151,26 +761,6 @@ $('.counter').ShareCounter({
         <td>Symbaloo</td>
         <td>http://www.symbaloo.com/</td>
         <td>s_symbaloo</td>
-    </tr>
-    <tr>
-        <td>Taaza</td>
-        <td>http://www.taaza.com/</td>
-        <td>s_taaza</td>
-    </tr>
-    <tr>
-        <td>Tagza</td>
-        <td>http://www.tagza.com/</td>
-        <td>s_tagza</td>
-    </tr>
-    <tr>
-        <td>Taringa</td>
-        <td>http://www.taringa.net/</td>
-        <td>s_taringa</td>
-    </tr>
-    <tr>
-        <td>Textme</td>
-        <td>http://ontextme.com/</td>
-        <td>s_textme</td>
     </tr>
     <tr>
         <td>Thewebblend</td>
@@ -1188,69 +778,14 @@ $('.counter').ShareCounter({
         <td>s_thisnext</td>
     </tr>
     <tr>
-        <td>Throwpile</td>
-        <td>http://www.throwpile.com/</td>
-        <td>s_throwpile</td>
-    </tr>
-    <tr>
-        <td>Toly</td>
-        <td>http://to.ly/</td>
-        <td>s_toly</td>
-    </tr>
-    <tr>
-        <td>Topsitelernet</td>
-        <td>http://ekle.topsiteler.net/</td>
-        <td>s_topsitelernet</td>
-    </tr>
-    <tr>
-        <td>Transferr</td>
-        <td>http://www.transferr.com/</td>
-        <td>s_transferr</td>
-    </tr>
-    <tr>
         <td>Tuenti</td>
         <td>http://www.tuenti.com/</td>
         <td>s_tuenti</td>
     </tr>
     <tr>
-        <td>Tulinq</td>
-        <td>http://www.tulinq.com/</td>
-        <td>s_tulinq</td>
-    </tr>
-    <tr>
-        <td>Tumblr</td>
-        <td>http://www.tumblr.com/</td>
-        <td>s_tumblr</td>
-    </tr>
-    <tr>
-        <td>Tvinx</td>
-        <td>http://www.tvinx.com/</td>
-        <td>s_tvinx</td>
-    </tr>
-    <tr>
-        <td>Twitter</td>
-        <td>http://twitter.com/</td>
-        <td>s_twitter</td>
-    </tr>
-    <tr>
-        <td>Twitthis</td>
-        <td>http://twitthis.com/</td>
-        <td>s_twitthis</td>
-    </tr>
-    <tr>
         <td>Typepad</td>
         <td>http://www.typepad.com/</td>
         <td>s_typepad</td>
-    </tr>
-    <tr>
-        <td>Upnews</td>
-        <td>http://www.upnews.it/</td>
-        <td>s_upnews</td>
-    </tr>
-    <tr>
-        <td>Urlaubswerkde</td>
-        <td>http://www.urlaubswerk.de/</td>
-        <td>s_urlaubswerkde</td>
     </tr>
     <tr>
         <td>Viadeo</td>
@@ -1268,49 +803,9 @@ $('.counter').ShareCounter({
         <td>s_visitezmonsite</td>
     </tr>
     <tr>
-        <td>Vk</td>
-        <td>http://vk.com/</td>
-        <td>s_vk</td>
-    </tr>
-    <tr>
-        <td>Vkrugudruzei</td>
-        <td>http://vkrugudruzei.ru/</td>
-        <td>s_vkrugudruzei</td>
-    </tr>
-    <tr>
-        <td>Voxopolis</td>
-        <td>http://www.voxopolis.com/</td>
-        <td>s_voxopolis</td>
-    </tr>
-    <tr>
         <td>Vybralisme</td>
         <td>http://vybrali.sme.sk/</td>
         <td>s_vybralisme</td>
-    </tr>
-    <tr>
-        <td>Webnews</td>
-        <td>http://www.webnews.de/</td>
-        <td>s_webnews</td>
-    </tr>
-    <tr>
-        <td>Webshare</td>
-        <td>http://www.webshare.co/</td>
-        <td>s_webshare</td>
-    </tr>
-    <tr>
-        <td>Werkenntwen</td>
-        <td>http://www.wer-kennt-wen.de/</td>
-        <td>s_werkenntwen</td>
-    </tr>
-    <tr>
-        <td>Domaintoolswhois</td>
-        <td>http://www.domaintools.com/</td>
-        <td>s_domaintoolswhois</td>
-    </tr>
-    <tr>
-        <td>Windows</td>
-        <td>http://api.addthis.com/</td>
-        <td>s_windows</td>
     </tr>
     <tr>
         <td>Wirefan</td>
@@ -1328,24 +823,9 @@ $('.counter').ShareCounter({
         <td>s_wowbored</td>
     </tr>
     <tr>
-        <td>Raiseyourvoice</td>
-        <td>http://action.raiseyourvoice.us/</td>
-        <td>s_raiseyourvoice</td>
-    </tr>
-    <tr>
         <td>Wykop</td>
         <td>http://www.wykop.pl/</td>
         <td>s_wykop</td>
-    </tr>
-    <tr>
-        <td>Xanga</td>
-        <td>http://www.xanga.com/</td>
-        <td>s_xanga</td>
-    </tr>
-    <tr>
-        <td>Xing</td>
-        <td>https://www.xing.com/</td>
-        <td>s_xing</td>
     </tr>
     <tr>
         <td>Yahoobkm</td>
@@ -1373,11 +853,6 @@ $('.counter').ShareCounter({
         <td>s_yigg</td>
     </tr>
     <tr>
-        <td>Yookos</td>
-        <td>http://www.yookos.com/</td>
-        <td>s_yookos</td>
-    </tr>
-    <tr>
         <td>Yoolink</td>
         <td>http://go.yoolink.to/</td>
         <td>s_yoolink</td>
@@ -1393,11 +868,6 @@ $('.counter').ShareCounter({
         <td>s_youmob</td>
     </tr>
     <tr>
-        <td>Yuuby</td>
-        <td>http://www.yuuby.com/</td>
-        <td>s_yuuby</td>
-    </tr>
-    <tr>
         <td>Zakladoknet</td>
         <td>http://zakladok.net/</td>
         <td>s_zakladoknet</td>
@@ -1407,15 +877,9 @@ $('.counter').ShareCounter({
         <td>http://ziczac.it/</td>
         <td>s_ziczac</td>
     </tr>
-    <tr>
-        <td>Zingme</td>
-        <td>http://link.apps.zing.vn/</td>
-        <td>s_zingme</td>
-    </tr>
 </table>
 
 
 ### Roadmap
 * More social services
-* Individual parameters popup window on each service
 * Custom parameters for popup window
