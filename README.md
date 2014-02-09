@@ -883,3 +883,6 @@ $('.counter').ShareCounter({
 ### Roadmap
 * More social services
 * Custom parameters for popup window
+
+
+*Please report me about any bugs.*
