@@ -2,6 +2,15 @@
     SocialShare - jQuery plugin
 */
 (function ($) {
+
+    function get_class_list(elem){
+        if(elem.classList){
+            return elem.classList;
+        }else{
+            return $(elem).attr('class').match(/\S+/gi);
+        }
+    }
+
     $.fn.ShareLink = function(options){
         var defaults = {
             title: '',
@@ -188,7 +197,7 @@
         }
 
         this.each(function(i, elem){
-            var classlist = elem.classList;
+            var classlist = get_class_list(elem);
             for(var i = 0; i < classlist.length; i++){
                 var cls = classlist[i];
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && templates[cls.substr(class_prefix_length)]){
@@ -229,7 +238,7 @@
         }
 
         this.each(function(i, elem){
-            var classlist = elem.classList;
+            var classlist = get_class_list(elem);
             for(var i = 0; i < classlist.length; i++){
                 var cls = classlist[i];
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && social[cls.substr(class_prefix_length)]){

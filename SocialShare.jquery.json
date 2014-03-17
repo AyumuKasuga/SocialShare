@@ -8,7 +8,7 @@
     ],
     "version": "0.2.0",
     "dependencies": {
-        "jquery": ">=2.x"
+        "jquery": ">=1.6"
     },
     "author": {
         "name" : "Andrey Kostakov",
