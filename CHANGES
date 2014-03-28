@@ -1,0 +1,5 @@
+UNRELEASED
+==========
+
+* Provides 'display_counter_from' option in 'ShareCounter'
+  to specify when you start to show the counter - Olivier Larchevêque
