@@ -244,8 +244,9 @@
                 var cls = classlist[i];
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && social[cls.substr(class_prefix_length)]){
                     social[cls.substr(class_prefix_length)](options.url, function(count){
-                        if (count >= options.display_counter_from)
-                          $(elem).text(count)
+                        if (count >= options.display_counter_from){
+                            $(elem).text(count);
+                        }
                     })
                 }
             }
