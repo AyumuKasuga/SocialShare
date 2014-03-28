@@ -24,7 +24,8 @@ $('.share').ShareLink({
 ```javascript
 $('.counter').ShareCounter({
     url: 'http://my-site-url.com/my-article.html', // url for which you want show like counter
-    class_prefix: 'c_' // optional class prefix for counter elements, default: 'c_'
+    class_prefix: 'c_', // optional class prefix for counter elements, default: 'c_'
+    display_counter_from: 0 // optional to set when counter is display, default: 0
 })
 ```
 

@@ -220,7 +220,8 @@
     $.fn.ShareCounter = function(options){
         var defaults = {
             url: window.location.href,
-            class_prefix: 'c_'
+            class_prefix: 'c_',
+            display_counter_from: 0
         };
 
         var options = $.extend({}, defaults, options);
@@ -243,7 +244,8 @@
                 var cls = classlist[i];
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && social[cls.substr(class_prefix_length)]){
                     social[cls.substr(class_prefix_length)](options.url, function(count){
-                        $(elem).text(count)
+                        if (count >= options.display_counter_from)
+                          $(elem).text(count)
                     })
                 }
             }
