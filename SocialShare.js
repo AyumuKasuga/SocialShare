@@ -205,8 +205,8 @@
                     $(elem).attr('href', final_link).click(function(){
                         var screen_width = screen.width;
                         var screen_height = screen.height;
-                        var popup_width = screen_width - (screen_width*0.2);
-                        var popup_height = screen_height - (screen_height*0.2);
+                        var popup_width = options.width ? options.width : (screen_width - (screen_width*0.2));
+                        var popup_height = options.height ? options.height : (screen_height - (screen_height*0.2));
                         var left = (screen_width/2)-(popup_width/2);
                         var top = (screen_height/2)-(popup_height/2);
                         var parameters = 'toolbar=0,status=0,width=' + popup_width + ',height=' + popup_height + ',top=' + top + ',left=' + left;
