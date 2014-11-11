@@ -14,8 +14,8 @@ $('.share').ShareLink({
     text: 'text of my great post', // text for share message
     image: 'http://my-site-url.com/images/funny-cats.png', // optional image for share message (not for all networks)
     url: 'http://my-site-url.com/my-article.html', // link on shared page
-    class_prefix: 's_' // optional class prefix for share elements (buttons or links or everything), default: 's_'
-    width: 640 // optional popup initial width
+    class_prefix: 's_', // optional class prefix for share elements (buttons or links or everything), default: 's_'
+    width: 640, // optional popup initial width
     height: 480 // optional popup initial height
 })
 ```
