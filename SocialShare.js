@@ -321,15 +321,24 @@
         }
 
         function odnoklassniki(url, callback){
+
+            ODKL = {
+                updateCount: function(param1, value){
+                    callback(value);
+                }
+            }
+
             $.ajax({
                 type: 'GET',
                 dataType: 'jsonp',
-                url: 'http://odnoklassniki.ru/dk',
-                jsonp: 'cb',
-                data: {'st.cmd': 'shareData', 'ref': url}
+                url: 'https://ok.ru/dk',
+                data: {'st.cmd': 'extLike', 'ref': url}
             })
-            .done(function(data){callback(parseInt(data.count))})
-            .fail(function(){callback(0)})
+            .fail(function(data, status){
+                if(status != 'parsererror'){
+                    callback(0);
+                }
+            })
         }
 
         function pinterest(url, callback){
