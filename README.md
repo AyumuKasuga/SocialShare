@@ -31,7 +31,7 @@ $('.counter').ShareCounter({
 })
 ```
 
-#### [Example in action](http://cdn.rawgit.com/AyumuKasuga/SocialShare/master/example.html)
+#### [Example in action](https://raw.githack.com/AyumuKasuga/SocialShare/master/example.html)
 
 
 ### Supported social networks
