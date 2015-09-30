@@ -80,6 +80,11 @@ $('.counter').ShareCounter({
         <td>http://www.pinterest.com/</td>
         <td>c_pinterest</td>
     </tr>
+    <tr>
+        <td>Google +</td>
+        <td>https://plus.google.com/</td>
+        <td>c_plus</td>
+    </tr>
 </table>
 
 #### for generate share link address:
