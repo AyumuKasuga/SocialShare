@@ -1,72 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
         <script type="text/javascript" src="SocialShare.js"></script>
-        <style type="text/css">
-            .like-block {
-                width: 100px;
-                height: 90px;
-                display: inline-block;
-                margin-right: 5px;
-                padding: 9px;
-                border:1px solid #3e9cbf;
-                border-radius: 5px;
-            }
-
-            .like-block-only-button {
-                width: 130px;
-                height: 40px;
-                display: inline-block;
-                margin-right: 5px;
-                padding: 9px;
-            }
-
-            .like-button {
-                height: 30px;
-                width: 100%;
-                text-align: center;
-                vertical-align: middle;
-                border-radius: 5px;
-                background: #3e9cbf;
-                padding: 8px 14px 10px;
-                border:1px solid #3e9cbf;
-                cursor:pointer; 
-                font-size:0.8em;
-                font-family:Oswald, sans-serif;
-                letter-spacing:.1em;
-                text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
-                color: #fff;
-                box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
-            }
-
-            .like-button:hover {
-                color:#dfe7ea;
-                box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-            }
-
-            .like-counter {
-                height: 30px;
-                border:2px solid #205c73;
-                text-align: center;
-                margin-bottom: 10px;
-                border-radius: 5px;
-                font-size:1em;
-                font-family:Oswald, sans-serif;
-                letter-spacing:.1em;
-                text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
-                color: #fff;
-                background: #3e9cbf;
-                padding-top: 10px;
-            }
-
-            .text, .source-link {
-                margin-bottom: 10px;
-            }
-
-            .small-font {
-                font-size:0.7em;
-            }
-        </style>
+        
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.share').ShareLink({
@@ -81,501 +21,367 @@
                  
             });
         </script>
+
+        <style>
+            #container-fluid {padding: 10px;}
+            button.share {margin-bottom: 5px;}
+            .source-link {float: right;}
+            .main-link {color: black;}
+        </style>
     </head>
     <body>
-        <div class='source-link'><a href='https://github.com/AyumuKasuga/SocialShare/blob/master/example.html'>page source</a></div>
-        <div class='text'>Buttons with counters:</div>
-        <div id='content'>
-            <div class='like-block'>
-                <div class='like-counter counter c_vk'></div>
-                <button class='like-button share s_vk'>Vkontakte</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_twitter'></div>
-                <button class='like-button share s_twitter'>Twitter</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_facebook'></div>
-                <button class='like-button share s_facebook'>Facebook</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_linkedin'></div>
-                <button class='like-button share s_linkedin'>Linkedin</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_myworld'></div>
-                <button class='like-button share s_myworld'>My Wold</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_odnoklassniki'></div>
-                <button class='like-button share s_odnoklassniki'>Ok</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_pinterest'></div>
-                <button class='like-button share s_pinterest'>Pinterest</button>
-            </div>
-            <div class='like-block'>
-                <div class='like-counter counter c_plus'></div>
-                <button class='like-button share s_plus'>Google +</button>
-            </div>
-            <hr>
-            <div class='text'>Just buttons:</div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_tumblr'>Tumblr</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_blogger'>Blogger</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_delicious'>Delicious</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_plus'>Google +</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_digg'>Digg</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_reddit'>Reddit</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_stumbleupon small-font'>stumbleupon</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_pocket'>pocket</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_chiq'>chiq</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_qrifier'>qrifier</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_qrsrc'>qrsrc</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_qzone'>qzone</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_tulinq'>tulinq</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_misterwong small-font'>misterwong</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_sto_zakladok small-font'>100zakladok</button>
-            </div>
+    <div id='container-fluid'>
+        <a target="_blank" class="btn btn-info source-link" href='https://github.com/AyumuKasuga/SocialShare/blob/master/example.html'>
+            page source <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+        </a>
+        <h1 class="main-title">
+            <a class="main-link" href="https://github.com/AyumuKasuga/SocialShare/">SocialShare</a> <small>examples</small>
+        </h1>
+        <hr>
+        <h3>Buttons with counters</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <button class='btn btn-primary share s_vk' type='button'>
+                    Vkontakte <span class='badge counter c_vk'></span>
+                </button>
 
-            <div class='like-block-only-button'>
-                <button class='like-button share s_two_linkme'>2linkme</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_adifni'>adifni</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_amazonwishlist'>amazon</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_amenme'>amenme</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_aim'>aim</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_aolmail'>aolmail</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_arto'>arto</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_baidu'>baidu</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_bitly'>bitly</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_bizsugar'>bizsugar</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_blinklist'>blinklist</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_blip'>blip</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_blogmarks'>blogmarks</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_blurpalicious small-font'>blurpalicious</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_bobrdobr'>bobrdobr</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_bonzobox'>bonzobox</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_bookmerkende small-font'>bookmerkende</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_box'>box</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_bryderi'>bryderi</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_buddymarks small-font'>buddymarks</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_camyoo'>camyoo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_care2'>care2</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_citeulike'>citeulike</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_classicalplace small-font'>classicalplace</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_cosmiq'>cosmiq</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_diggita'>diggita</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_diigo'>diigo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_domelhor'>domelhor</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_dotnetshoutout small-font'>dotnetshoutout</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_douban'>douban</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_dropjack'>dropjack</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_edelight'>edelight</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_ekudos'>ekudos</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_elefantapl'>elefantapl</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_embarkons'>embarkons</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_evernote'>evernote</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_extraplay'>extraplay</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_ezyspot'>ezyspot</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_fabulously40 small-font'>fabulously40</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_informazione small-font'>informazione</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_fark'>fark</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_farkinda'>farkinda</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_favable'>favable</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_favlogde'>favlogde</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_flaker'>flaker</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_folkd'>folkd</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_fresqui'>fresqui</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_friendfeed'>friendfeed</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_funp'>funp</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_fwisp'>fwisp</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_givealink'>givealink</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_gmail'>gmail</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_goodnoows'>goodnoows</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_google'>google</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_googletranslate small-font'>translate</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_greaterdebater small-font'>greaterdebater</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_hackernews'>hackernews</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_hatena'>hatena</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_hedgehogs'>hedgehogs</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_hotmail'>hotmail</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_w3validator'>w3validator</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_ihavegot'>ihavegot</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_instapaper'>instapaper</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_isociety'>isociety</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_iwiw'>iwiw</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_jamespot'>jamespot</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_jumptags'>jumptags</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_kaboodle'>kaboodle</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_kaevur'>kaevur</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_kledy'>kledy</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_librerio'>librerio</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_linkuj'>linkuj</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_livejournal'>livejournal</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_logger24'>logger24</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_mashbord'>mashbord</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_meinvz'>meinvz</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_mekusharim'>mekusharim</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_memori'>memori</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_meneame'>meneame</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_mixi'>mixi</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_moemesto'>moemesto</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_myspace'>myspace</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_n4g'>n4g</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_netlog'>netlog</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_netvouz'>netvouz</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_newstrust'>newstrust</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_newsvine'>newsvine</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_nujij'>nujij</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_oknotizie'>oknotizie</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_oyyla'>oyyla</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_pdfonline'>pdfonline</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_pdfmyurl'>pdfmyurl</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_phonefavs'>phonefavs</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_plaxo'>plaxo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_plurk'>plurk</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_posteezy'>posteezy</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_pusha'>pusha</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_rediff'>rediff</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_redkum'>redkum</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_scoopat'>scoopat</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_sekoman'>sekoman</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_shaveh'>shaveh</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_shetoldme'>shetoldme</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_sinaweibo'>sinaweibo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_sodahead'>sodahead</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_sonico'>sonico</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_springpad'>springpad</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_startaid'>startaid</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_startlap'>startlap</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_studivz'>studivz</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_stuffpit'>stuffpit</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_stumpedia'>stumpedia</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_svejo'>svejo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_symbaloo'>symbaloo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_thewebblend small-font'>thewebblend</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_thinkfinity'>thinkfinity</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_thisnext'>thisnext</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_tuenti'>tuenti</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_typepad'>typepad</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_viadeo'>viadeo</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_virb'>virb</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_visitezmonsite small-font'>visitezmonsite</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_vybralisme'>vybralisme</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_wirefan'>wirefan</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_wordpress'>wordpress</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_wowbored'>wowbored</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_wykop'>wykop</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yahoobkm'>yahoobkm</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yahoomail'>yahoomail</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yammer'>yammer</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yardbarker'>yardbarker</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yigg'>yigg</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yoolink'>yoolink</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_yorumcuyum small-font'>yorumcuyum</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_youmob'>youmob</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_zakladoknet'>zakladoknet</button>
-            </div>
-            <div class='like-block-only-button'>
-                <button class='like-button share s_ziczac'>ziczac</button>
+                <button class='btn btn-primary share s_twitter' type='button'>
+                    Twitter <span class='badge counter c_twitter'></span>
+                </button>
+
+                <button class='btn btn-primary share s_facebook' type='button'>
+                    Facebook <div class='badge counter c_facebook'></div>
+                </button>
+
+                <button class='btn btn-primary share s_linkedin' type='button'>
+                    Linkedin <div class='badge counter c_linkedin'></div>
+                </button>
+
+                <button class='btn btn-primary share s_myworld' type='button'>
+                    My Wold <div class='badge counter c_myworld'></div>
+                </button>
+
+                <button class='btn btn-primary share s_odnoklassniki' type='button'>
+                    OK <div class='badge counter c_odnoklassniki'></div>
+                </button>
+
+                <button class='btn btn-primary share s_pinterest' type='button'>
+                    Pinterest <div class='badge counter c_pinterest'></div>
+                </button>
+
+                <button class='btn btn-primary share s_plus' type='button'>
+                    Google + <div class='badge counter c_plus'></div>
+                </button>
+            </div>
+        </div>
+            <hr>
+            <h3>Just buttons</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <button class='btn btn-primary share s_tumblr'>Tumblr</button>
+                
+                    <button class='btn btn-primary share s_blogger'>Blogger</button>
+                
+                    <button class='btn btn-primary share s_delicious'>Delicious</button>
+                
+                    <button class='btn btn-primary share s_plus'>Google +</button>
+                
+                    <button class='btn btn-primary share s_digg'>Digg</button>
+                
+                    <button class='btn btn-primary share s_reddit'>Reddit</button>
+                
+                    <button class='btn btn-primary share s_stumbleupon small-font'>stumbleupon</button>
+                
+                    <button class='btn btn-primary share s_pocket'>pocket</button>
+                
+                    <button class='btn btn-primary share s_chiq'>chiq</button>
+                
+                    <button class='btn btn-primary share s_qrifier'>qrifier</button>
+                
+                    <button class='btn btn-primary share s_qrsrc'>qrsrc</button>
+                
+                    <button class='btn btn-primary share s_qzone'>qzone</button>
+                
+                    <button class='btn btn-primary share s_tulinq'>tulinq</button>
+                
+                    <button class='btn btn-primary share s_misterwong small-font'>misterwong</button>
+                
+                    <button class='btn btn-primary share s_sto_zakladok small-font'>100zakladok</button>
+                
+                    <button class='btn btn-primary share s_two_linkme'>2linkme</button>
+                
+                    <button class='btn btn-primary share s_adifni'>adifni</button>
+                
+                    <button class='btn btn-primary share s_amazonwishlist'>amazon</button>
+                
+                    <button class='btn btn-primary share s_amenme'>amenme</button>
+                
+                    <button class='btn btn-primary share s_aim'>aim</button>
+                
+                    <button class='btn btn-primary share s_aolmail'>aolmail</button>
+                
+                    <button class='btn btn-primary share s_arto'>arto</button>
+                
+                    <button class='btn btn-primary share s_baidu'>baidu</button>
+                
+                    <button class='btn btn-primary share s_bitly'>bitly</button>
+                
+                    <button class='btn btn-primary share s_bizsugar'>bizsugar</button>
+                
+                    <button class='btn btn-primary share s_blinklist'>blinklist</button>
+                
+                    <button class='btn btn-primary share s_blip'>blip</button>
+                
+                    <button class='btn btn-primary share s_blogmarks'>blogmarks</button>
+                
+                    <button class='btn btn-primary share s_blurpalicious small-font'>blurpalicious</button>
+                
+                    <button class='btn btn-primary share s_bobrdobr'>bobrdobr</button>
+                
+                    <button class='btn btn-primary share s_bonzobox'>bonzobox</button>
+                
+                    <button class='btn btn-primary share s_bookmerkende small-font'>bookmerkende</button>
+                
+                    <button class='btn btn-primary share s_box'>box</button>
+                
+                    <button class='btn btn-primary share s_bryderi'>bryderi</button>
+                
+                    <button class='btn btn-primary share s_buddymarks small-font'>buddymarks</button>
+                
+                    <button class='btn btn-primary share s_camyoo'>camyoo</button>
+                
+                    <button class='btn btn-primary share s_care2'>care2</button>
+                
+                    <button class='btn btn-primary share s_citeulike'>citeulike</button>
+                
+                    <button class='btn btn-primary share s_classicalplace small-font'>classicalplace</button>
+                
+                    <button class='btn btn-primary share s_cosmiq'>cosmiq</button>
+                
+                    <button class='btn btn-primary share s_diggita'>diggita</button>
+                
+                    <button class='btn btn-primary share s_diigo'>diigo</button>
+                
+                    <button class='btn btn-primary share s_domelhor'>domelhor</button>
+                
+                    <button class='btn btn-primary share s_dotnetshoutout small-font'>dotnetshoutout</button>
+                
+                    <button class='btn btn-primary share s_douban'>douban</button>
+                
+                    <button class='btn btn-primary share s_dropjack'>dropjack</button>
+                
+                    <button class='btn btn-primary share s_edelight'>edelight</button>
+                
+                    <button class='btn btn-primary share s_ekudos'>ekudos</button>
+                
+                    <button class='btn btn-primary share s_elefantapl'>elefantapl</button>
+                
+                    <button class='btn btn-primary share s_embarkons'>embarkons</button>
+                
+                    <button class='btn btn-primary share s_evernote'>evernote</button>
+                
+                    <button class='btn btn-primary share s_extraplay'>extraplay</button>
+                
+                    <button class='btn btn-primary share s_ezyspot'>ezyspot</button>
+                
+                    <button class='btn btn-primary share s_fabulously40 small-font'>fabulously40</button>
+                
+                    <button class='btn btn-primary share s_informazione small-font'>informazione</button>
+                
+                    <button class='btn btn-primary share s_fark'>fark</button>
+                
+                    <button class='btn btn-primary share s_farkinda'>farkinda</button>
+                
+                    <button class='btn btn-primary share s_favable'>favable</button>
+                
+                    <button class='btn btn-primary share s_favlogde'>favlogde</button>
+                
+                    <button class='btn btn-primary share s_flaker'>flaker</button>
+                
+                    <button class='btn btn-primary share s_folkd'>folkd</button>
+                
+                    <button class='btn btn-primary share s_fresqui'>fresqui</button>
+                
+                    <button class='btn btn-primary share s_friendfeed'>friendfeed</button>
+                
+                    <button class='btn btn-primary share s_funp'>funp</button>
+                
+                    <button class='btn btn-primary share s_fwisp'>fwisp</button>
+                
+                    <button class='btn btn-primary share s_givealink'>givealink</button>
+                
+                    <button class='btn btn-primary share s_gmail'>gmail</button>
+                
+                    <button class='btn btn-primary share s_goodnoows'>goodnoows</button>
+                
+                    <button class='btn btn-primary share s_google'>google</button>
+                
+                    <button class='btn btn-primary share s_googletranslate small-font'>translate</button>
+                
+                    <button class='btn btn-primary share s_greaterdebater small-font'>greaterdebater</button>
+                
+                    <button class='btn btn-primary share s_hackernews'>hackernews</button>
+                
+                    <button class='btn btn-primary share s_hatena'>hatena</button>
+                
+                    <button class='btn btn-primary share s_hedgehogs'>hedgehogs</button>
+                
+                    <button class='btn btn-primary share s_hotmail'>hotmail</button>
+                
+                    <button class='btn btn-primary share s_w3validator'>w3validator</button>
+                
+                    <button class='btn btn-primary share s_ihavegot'>ihavegot</button>
+                
+                    <button class='btn btn-primary share s_instapaper'>instapaper</button>
+                
+                    <button class='btn btn-primary share s_isociety'>isociety</button>
+                
+                    <button class='btn btn-primary share s_iwiw'>iwiw</button>
+                
+                    <button class='btn btn-primary share s_jamespot'>jamespot</button>
+                
+                    <button class='btn btn-primary share s_jumptags'>jumptags</button>
+                
+                    <button class='btn btn-primary share s_kaboodle'>kaboodle</button>
+                
+                    <button class='btn btn-primary share s_kaevur'>kaevur</button>
+                
+                    <button class='btn btn-primary share s_kledy'>kledy</button>
+                
+                    <button class='btn btn-primary share s_librerio'>librerio</button>
+                
+                    <button class='btn btn-primary share s_linkuj'>linkuj</button>
+                
+                    <button class='btn btn-primary share s_livejournal'>livejournal</button>
+                
+                    <button class='btn btn-primary share s_logger24'>logger24</button>
+                
+                    <button class='btn btn-primary share s_mashbord'>mashbord</button>
+                
+                    <button class='btn btn-primary share s_meinvz'>meinvz</button>
+                
+                    <button class='btn btn-primary share s_mekusharim'>mekusharim</button>
+                
+                    <button class='btn btn-primary share s_memori'>memori</button>
+                
+                    <button class='btn btn-primary share s_meneame'>meneame</button>
+                
+                    <button class='btn btn-primary share s_mixi'>mixi</button>
+                
+                    <button class='btn btn-primary share s_moemesto'>moemesto</button>
+                
+                    <button class='btn btn-primary share s_myspace'>myspace</button>
+                
+                    <button class='btn btn-primary share s_n4g'>n4g</button>
+                
+                    <button class='btn btn-primary share s_netlog'>netlog</button>
+                
+                    <button class='btn btn-primary share s_netvouz'>netvouz</button>
+                
+                    <button class='btn btn-primary share s_newstrust'>newstrust</button>
+                
+                    <button class='btn btn-primary share s_newsvine'>newsvine</button>
+                
+                    <button class='btn btn-primary share s_nujij'>nujij</button>
+                
+                    <button class='btn btn-primary share s_oknotizie'>oknotizie</button>
+                
+                    <button class='btn btn-primary share s_oyyla'>oyyla</button>
+                
+                    <button class='btn btn-primary share s_pdfonline'>pdfonline</button>
+                
+                    <button class='btn btn-primary share s_pdfmyurl'>pdfmyurl</button>
+                
+                    <button class='btn btn-primary share s_phonefavs'>phonefavs</button>
+                
+                    <button class='btn btn-primary share s_plaxo'>plaxo</button>
+                
+                    <button class='btn btn-primary share s_plurk'>plurk</button>
+                
+                    <button class='btn btn-primary share s_posteezy'>posteezy</button>
+                
+                    <button class='btn btn-primary share s_pusha'>pusha</button>
+                
+                    <button class='btn btn-primary share s_rediff'>rediff</button>
+                
+                    <button class='btn btn-primary share s_redkum'>redkum</button>
+                
+                    <button class='btn btn-primary share s_scoopat'>scoopat</button>
+                
+                    <button class='btn btn-primary share s_sekoman'>sekoman</button>
+                
+                    <button class='btn btn-primary share s_shaveh'>shaveh</button>
+                
+                    <button class='btn btn-primary share s_shetoldme'>shetoldme</button>
+                
+                    <button class='btn btn-primary share s_sinaweibo'>sinaweibo</button>
+                
+                    <button class='btn btn-primary share s_sodahead'>sodahead</button>
+                
+                    <button class='btn btn-primary share s_sonico'>sonico</button>
+                
+                    <button class='btn btn-primary share s_springpad'>springpad</button>
+                
+                    <button class='btn btn-primary share s_startaid'>startaid</button>
+                
+                    <button class='btn btn-primary share s_startlap'>startlap</button>
+                
+                    <button class='btn btn-primary share s_studivz'>studivz</button>
+                
+                    <button class='btn btn-primary share s_stuffpit'>stuffpit</button>
+                
+                    <button class='btn btn-primary share s_stumpedia'>stumpedia</button>
+                
+                    <button class='btn btn-primary share s_svejo'>svejo</button>
+                
+                    <button class='btn btn-primary share s_symbaloo'>symbaloo</button>
+                
+                    <button class='btn btn-primary share s_thewebblend small-font'>thewebblend</button>
+                
+                    <button class='btn btn-primary share s_thinkfinity'>thinkfinity</button>
+                
+                    <button class='btn btn-primary share s_thisnext'>thisnext</button>
+                
+                    <button class='btn btn-primary share s_tuenti'>tuenti</button>
+                
+                    <button class='btn btn-primary share s_typepad'>typepad</button>
+                
+                    <button class='btn btn-primary share s_viadeo'>viadeo</button>
+                
+                    <button class='btn btn-primary share s_virb'>virb</button>
+                
+                    <button class='btn btn-primary share s_visitezmonsite small-font'>visitezmonsite</button>
+                
+                    <button class='btn btn-primary share s_vybralisme'>vybralisme</button>
+                
+                    <button class='btn btn-primary share s_wirefan'>wirefan</button>
+                
+                    <button class='btn btn-primary share s_wordpress'>wordpress</button>
+                
+                    <button class='btn btn-primary share s_wowbored'>wowbored</button>
+                
+                    <button class='btn btn-primary share s_wykop'>wykop</button>
+                
+                    <button class='btn btn-primary share s_yahoobkm'>yahoobkm</button>
+                
+                    <button class='btn btn-primary share s_yahoomail'>yahoomail</button>
+                
+                    <button class='btn btn-primary share s_yammer'>yammer</button>
+                
+                    <button class='btn btn-primary share s_yardbarker'>yardbarker</button>
+                
+                    <button class='btn btn-primary share s_yigg'>yigg</button>
+                
+                    <button class='btn btn-primary share s_yoolink'>yoolink</button>
+                
+                    <button class='btn btn-primary share s_yorumcuyum small-font'>yorumcuyum</button>
+                
+                    <button class='btn btn-primary share s_youmob'>youmob</button>
+                
+                    <button class='btn btn-primary share s_zakladoknet'>zakladoknet</button>
+                
+                    <button class='btn btn-primary share s_ziczac'>ziczac</button>
+                </div>
             </div>
         </div>
     </body>
