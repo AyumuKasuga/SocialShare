@@ -276,11 +276,11 @@
         }
 
         function vk(url, callback){
-            VK = {
-                Share: {
-                    count: function(idx, value){
-                        callback(value);
-                    }
+            if(window.VK === undefined){VK = {};}
+
+            VK.Share = {
+                count: function(idx, value){
+                    callback(value);
                 }
             }
 
