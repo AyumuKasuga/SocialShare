@@ -229,7 +229,6 @@
         var class_prefix_length = options.class_prefix.length
 
         var social = {
-            'twitter': twitter,
             'facebook': facebook,
             'vk': vk,
             'myworld': myworld,
@@ -252,17 +251,6 @@
                 }
             }
         });
-
-        function twitter(url, callback){
-            $.ajax({
-                type : 'GET',
-                dataType : 'jsonp',
-                url : 'https://cdn.api.twitter.com/1/urls/count.json',
-                data : {'url': url}
-            })
-            .done(function(data){callback(data.count);})
-            .fail(function(data){callback(0);})
-        }
 
         function facebook(url, callback){
             $.ajax({
