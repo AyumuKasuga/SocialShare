@@ -7,7 +7,7 @@
         "share",
         "jquery-plugin"
     ],
-    "version": "0.2.7",
+    "version": "0.2.8",
     "dependencies": {
         "jquery": ">=1.6"
     },
@@ -16,6 +16,7 @@
         "email" : "bps@dzen.ws",
         "url" : "https://github.com/AyumuKasuga/"
     },
+    "main": "SocialShare.js",
     "licenses": [
         {
             "type": "MIT",
