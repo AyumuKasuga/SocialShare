@@ -196,7 +196,7 @@
             return url;
         }
 
-        this.each(function(i, elem){
+        return this.each(function(i, elem){
             var classlist = get_class_list(elem);
             for(var i = 0; i < classlist.length; i++){
                 var cls = classlist[i];
@@ -238,7 +238,7 @@
             'plus': plus
         }
 
-        this.each(function(i, elem){
+        return this.each(function(i, elem){
             var classlist = get_class_list(elem);
             for(var i = 0; i < classlist.length; i++){
                 var cls = classlist[i];
@@ -364,9 +364,6 @@
             })
             .done(function(data){callback(data.result.metadata.globalCounts.count)})
             .fail(function(){callback(0)})
-
         }
-
     }
-
 })(jQuery);
