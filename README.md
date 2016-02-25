@@ -880,6 +880,12 @@ $('.counter').ShareCounter({
         <td>http://ziczac.it/</td>
         <td>s_ziczac</td>
     </tr>
+    <tr>
+        <td>WhatsApp</td>
+        <td>https://www.whatsapp.com/</td>
+        <td>s_whatsapp</td>
+    </tr>
+    
 </table>
 
 
