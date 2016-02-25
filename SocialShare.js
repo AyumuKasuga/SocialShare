@@ -184,7 +184,8 @@
             yorumcuyum: 'http://www.yorumcuyum.com/?baslik={title}&link={url}',
             youmob: 'http://youmob.com/mobit.aspx?title={title}&mob={url}',
             zakladoknet: 'http://zakladok.net/link/?u={url}&t={title}',
-            ziczac: 'http://ziczac.it/a/segnala/?gurl={url}&gtit={title}'
+            ziczac: 'http://ziczac.it/a/segnala/?gurl={url}&gtit={title}',
+            whatsapp: 'whatsapp://send?text={url} {title}'
         }
 
         function link(network){
@@ -203,6 +204,10 @@
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && templates[cls.substr(class_prefix_length)]){
                     var final_link = link(cls.substr(class_prefix_length));
                     $(elem).attr('href', final_link).click(function(){
+                        var url_object = new URL($(this).attr('href'));
+                        if(url_object.protocol.search('http') ==-1){
+                            return window.open($(this).attr('href')) && false;
+                        }
                         var screen_width = screen.width;
                         var screen_height = screen.height;
                         var popup_width = options.width ? options.width : (screen_width - (screen_width*0.2));
