@@ -27,7 +27,7 @@
         var templates = {
             twitter: 'https://twitter.com/intent/tweet?url={url}&text={text}',
             pinterest: 'https://www.pinterest.com/pin/create/button/?media={image}&url={url}&description={text}',
-            facebook: 'https://www.facebook.com/sharer.php?s=100&p[title]={title}&p[summary]={text}&p[url]={url}&p[images][0]={image}',
+            facebook: 'https://www.facebook.com/sharer.php?s=100&p[title]={title}&u={url}&t={title}&p[summary]={text}&p[url]={url}&p[images][0]={image}',
             vk: 'https://vkontakte.ru/share.php?url={url}&title={title}&description={text}&image={image}&noparse=true',
             linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={text}&source={url}',
             myworld: 'https://connect.mail.ru/share?url={url}&title={title}&description={text}&imageurl={image}',
@@ -190,10 +190,10 @@
 
         function link(network){
             var url = templates[network];
-            url = url.replace('{url}', encodeURIComponent(options.url));
-            url = url.replace('{title}', encodeURIComponent(options.title));
-            url = url.replace('{text}', encodeURIComponent(options.text));
-            url = url.replace('{image}', encodeURIComponent(options.image));
+            url = url.replace(/{url}/g, encodeURIComponent(options.url));
+            url = url.replace(/{title}/g, encodeURIComponent(options.title));
+            url = url.replace(/{text}/g, encodeURIComponent(options.text));
+            url = url.replace(/{image}/g, encodeURIComponent(options.image));
             return url;
         }
 
