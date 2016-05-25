@@ -204,8 +204,7 @@
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && templates[cls.substr(class_prefix_length)]){
                     var final_link = link(cls.substr(class_prefix_length));
                     $(elem).attr('href', final_link).click(function(){
-                        var url_object = new URL($(this).attr('href'));
-                        if(url_object.protocol.search('http') ==-1){
+                        if($(this).attr('href').indexOf('http://') === -1 && $(this).attr('href').indexOf('https://') === -1){
                             return window.open($(this).attr('href')) && false;
                         }
                         var screen_width = screen.width;
