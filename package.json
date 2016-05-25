@@ -7,7 +7,7 @@
         "share",
         "jquery-plugin"
     ],
-    "version": "0.2.12",
+    "version": "0.2.13",
     "dependencies": {
         "jquery": ">=1.6"
     },
