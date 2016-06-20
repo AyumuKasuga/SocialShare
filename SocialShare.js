@@ -263,7 +263,13 @@
                 url: 'https://api.facebook.com/restserver.php',
                 data: {'method': 'links.getStats', 'urls': [url], 'format': 'json'}
             })
-            .done(function (data){callback(data[0].share_count)})
+            .done(function (data){
+                if(data.length !== 0){
+                    callback(data[0].share_count)
+                }else{
+                    callback(0)
+                }
+            })
             .fail(function(){callback(0);})
         }
 
