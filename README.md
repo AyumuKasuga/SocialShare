@@ -27,7 +27,8 @@ $('.share').ShareLink({
 $('.counter').ShareCounter({
     url: 'http://my-site-url.com/my-article.html', // url for which you want show like counter
     class_prefix: 'c_', // optional class prefix for counter elements, default: 'c_'
-    display_counter_from: 0 // optional to set when counter is display, default: 0
+    display_counter_from: 0, // optional to set when counter is display, default: 0
+    increment: false // Optional. If this option is true you can summarize counters from different sources just using multiple classes for one container.
 })
 ```
 
@@ -885,7 +886,7 @@ $('.counter').ShareCounter({
         <td>https://www.whatsapp.com/</td>
         <td>s_whatsapp</td>
     </tr>
-    
+
 </table>
 
 

@@ -225,7 +225,8 @@
         var defaults = {
             url: window.location.href,
             class_prefix: 'c_',
-            display_counter_from: 0
+            display_counter_from: 0,
+            increment: false
         };
 
         var options = $.extend({}, defaults, options);
@@ -248,7 +249,12 @@
                 var cls = classlist[i];
                 if(cls.substr(0, class_prefix_length) == options.class_prefix && social[cls.substr(class_prefix_length)]){
                     social[cls.substr(class_prefix_length)](options.url, function(count){
+                        count = parseInt(count);
                         if (count >= options.display_counter_from){
+                            var current_value = parseInt($(elem).text());
+                            if(options.increment && !isNaN(current_value)){
+                                count += current_value;
+                            }
                             $(elem).text(count);
                         }
                     })
@@ -274,23 +280,31 @@
         }
 
         function vk(url, callback){
-            if(window.VK === undefined){VK = {};}
-
-            VK.Share = {
-                count: function(idx, value){
-                    callback(value);
+            if(window.VK === undefined){
+                VK = {
+                    CallbackList: [],
+                    Share: {
+                        count: function(idx, value){
+                            VK.CallbackList[idx](value);
+                        }
+                    }
                 }
             }
+
+            var current_callback_index = VK.CallbackList.length;
+            VK.CallbackList.push(callback);
 
             $.ajax({
                 type: 'GET',
                 dataType: 'jsonp',
                 url: 'https://vk.com/share.php',
-                data: {'act': 'count', 'index': 0, 'url': url}
+                data: {'act': 'count', 'index': current_callback_index, 'url': url}
             })
             .fail(function(data, status){
                 if(status != 'parsererror'){
-                    callback(0);
+                    for(i in VK.CallbackList){
+                        VK.CallbackList[i](0)
+                    }
                 }
             })
         }
@@ -320,22 +334,29 @@
         }
 
         function odnoklassniki(url, callback){
-
-            ODKL = {
-                updateCount: function(param1, value){
-                    callback(value);
+            if(window.ODKL === undefined){
+                ODKL = {
+                    CallbackList: [],
+                    updateCount: function(uid, value){
+                        ODKL.CallbackList[parseInt(uid)](value);
+                    }
                 }
             }
+
+            var current_callback_index = ODKL.CallbackList.length;
+            ODKL.CallbackList.push(callback);
 
             $.ajax({
                 type: 'GET',
                 dataType: 'jsonp',
                 url: 'https://ok.ru/dk',
-                data: {'st.cmd': 'extLike', 'ref': url}
+                data: {'st.cmd': 'extLike', 'ref': url, 'uid': current_callback_index}
             })
             .fail(function(data, status){
                 if(status != 'parsererror'){
-                    callback(0);
+                    for(i in ODKL.CallbackList){
+                        ODKL.CallbackList[i](0)
+                    }
                 }
             })
         }
