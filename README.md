@@ -47,11 +47,6 @@ $('.counter').ShareCounter({
         <th>class with default prefix (c_)</th>
     </tr>
     <tr>
-        <td>Facebook</td>
-        <td>https://www.facebook.com/</td>
-        <td>c_facebook</td>
-    </tr>
-    <tr>
         <td>Vkontakte</td>
         <td>https://vk.com/</td>
         <td>c_vk</td>

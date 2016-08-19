@@ -234,7 +234,6 @@
         var class_prefix_length = options.class_prefix.length
 
         var social = {
-            'facebook': facebook,
             'vk': vk,
             'myworld': myworld,
             'linkedin': linkedin,
@@ -261,23 +260,6 @@
                 }
             }
         });
-
-        function facebook(url, callback){
-            $.ajax({
-                type: 'GET',
-                dataType: 'jsonp',
-                url: 'https://api.facebook.com/restserver.php',
-                data: {'method': 'links.getStats', 'urls': [url], 'format': 'json'}
-            })
-            .done(function (data){
-                if(data.length !== 0){
-                    callback(data[0].share_count)
-                }else{
-                    callback(0)
-                }
-            })
-            .fail(function(){callback(0);})
-        }
 
         function vk(url, callback){
             if(window.VK === undefined){
