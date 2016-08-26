@@ -239,7 +239,8 @@
             'linkedin': linkedin,
             'odnoklassniki': odnoklassniki,
             'pinterest': pinterest,
-            'plus': plus
+            'plus': plus,
+            'facebook': facebook
         }
 
         return this.each(function(i, elem){
@@ -376,6 +377,21 @@
                 })
             })
             .done(function(data){callback(data.result.metadata.globalCounts.count)})
+            .fail(function(){callback(0)})
+        }
+
+        function facebook(url, callback){
+            $.ajax({
+                type: 'GET',
+                dataType: 'jsonp',
+                url: 'https://graph.facebook.com',
+                data: {'id': url}
+            })
+            .done(function (data){
+                if(data.share != undefined && data.share.share_count != undefined){
+                    callback(data.share.share_count)
+                }
+            })
             .fail(function(){callback(0)})
         }
     }

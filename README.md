@@ -76,6 +76,11 @@ $('.counter').ShareCounter({
         <td>https://plus.google.com/</td>
         <td>c_plus</td>
     </tr>
+    <tr>
+        <td>Facebook</td>
+        <td>https://facebook.com/</td>
+        <td>c_facebook</td>
+    </tr>
 </table>
 
 #### for generate share link address:
