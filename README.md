@@ -83,6 +83,8 @@ $('.counter').ShareCounter({
     </tr>
 </table>
 
+If you want to use facebook counter please read [this comment](https://github.com/AyumuKasuga/SocialShare/issues/24#issuecomment-242845048)
+
 #### for generate share link address:
 
 <table>
